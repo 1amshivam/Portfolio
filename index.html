@@ -2,140 +2,394 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Suman Kumar Roy | Modern Frontend Developer Portfolio</title>
+    <!-- Google Fonts: Inter for body, Poppins for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Remixicon for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-<body>
-    <div id="main">
-        <div id="page">
-            <div id="nav">
-                <img src="" alt="">
-                <div id="center-nav">
-                    <a href="#">ABOUT</a>
-                    <a href="#">SKILLS</a>
-                    <a href="#">PROJECTS</a>
-                    <a href="#">CONTACT</a>
-                </div>
-                <input type="text" placeholder="search">
-            </div>
-            <img src="./image.png" alt="">
-            <div id="text">
-                <h3>Hello!</h3>
-                <h1>Hello, it's Me <br>Suman Kumar Roy<br>And i'm a Frontend Developer</h1>
-                <h2>I am a web developer.My passion lies in creating captivating website designs and implementing them through frontend development. i take pride in staying up-to-date with current desingn trends and leveraging my creativity to produce visually appealing and user-friendly website.</h2>
-                <div id="buttons">
-                </div>
-            </div>
-        </div>
-        <div id="page1">
-           
-            <div id="right">
-                <div id="text1">
-                    <h3>Skills</h3>
-                    <h1>Skills</h1>
-                </div>
-            </div>
-            <div id="left">
-                <div class="box">
-                    <h4>01</h4>
-                    <h1>HTML</h1>
-                    <div class="circle"><i class="ri-arrow-right-up-line"></i></div>
-                </div>
-                <div class="box">
-                    <h4>02</h4>
-                    <h1>CSS</h1>
-                    <div class="circle"><i class="ri-arrow-right-up-line"></i></div>
-                </div>
-                <div class="box">
-                    <h4>03</h4>
-                    <h1>JAVA SCRIPT</h1>
-                    <div class="circle"><i class="ri-arrow-right-up-line"></i></div>
-                </div>
-                
-            </div>
-        </div>
-        <div id="page2">
-            <div id="text4">
-                <h3>PROJECT</h3>
-                <h1>LATEST <br>PROJECTS </h1>
-            </div>
-            <div id="project">
-                <div class="projects p1">
-                    <div id="text3">
-                        <a href="https://rad-genie-64775c.netlify.app"><h1> Landing Page <br>Coupon Site </h1> </a>
-                        <div
-                        
+<body class="dark">
+    <!-- Main Wrapper -->
+    <div id="main-wrapper">
 
-                
-                        class="circle"><i class="ri-arrow-right-up-line"></i>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-content container">
+                <a href="#hero" class="logo">Suman.dev</a>
+                <div class="nav-links">
+                    <a href="#hero" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="ri-moon-fill"></i>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <button class="close-btn"><i class="ri-close-line"></i></button>
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background-shapes">
+                <div class="shape"></div>
+                <div class="shape square"></div>
+                <div class="shape"></div>
+                <div class="shape square"></div>
+                <div class="shape"></div>
+                <div class="shape square"></div>
+                <div class="shape"></div>
+                <div class="shape square"></div>
+            </div>
+            <div class="hero-content">
+                <h1><span class="subtle-text">Hello there! I'm</span> <br> <span class="text-gradient">Suman Kumar Roy</span></h1>
+                <p>A passionate Frontend Developer crafting engaging and user-friendly web experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary"><i class="ri-code-s-slash-line"></i> View My Work</a>
+                    <a href="#contact" class="button button-secondary"><i class="ri-mail-line"></i> Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container text-center">
+                <h2 class="heading-primary">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://placehold.co/400x400/007bff/FFFFFF?text=Suman+Roy" alt="Suman Kumar Roy Profile Picture">
+                    </div>
+                    <div class="about-text">
+                        <h3 class="heading-secondary">My Journey & Passion</h3>
+                        <p>
+                            Hello there! I'm Suman Kumar Roy, a dedicated frontend developer with a passion for creating beautiful and functional web applications. My journey into web development began with a fascination for how design meets code to bring ideas to life on the internet.
+                        </p>
+                        <p>
+                            I specialize in building responsive, accessible, and high-performance user interfaces using modern web technologies. I thrive on solving complex problems and continuously learning new tools and techniques to enhance my craft. From conceptualization to deployment, I enjoy every step of the development process.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or enjoying a good book. I'm always eager to collaborate on exciting projects and contribute to a team that values innovation and user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container text-center">
+                <h2 class="heading-primary">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="ri-html5-fill skill-icon"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-css3-fill skill-icon"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-javascript-fill skill-icon"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-reactjs-fill skill-icon"></i>
+                        <h3>React.js</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-tailwind-css-fill skill-icon"></i>
+                        <h3>Tailwind CSS</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-git-branch-fill skill-icon"></i>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-palette-fill skill-icon"></i>
+                        <h3>UI/UX Design</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ri-accessibility-fill skill-icon"></i>
+                        <h3>Accessibility</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container text-center">
+                <h2 class="heading-primary">Latest Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://placehold.co/600x400/007bff/FFFFFF?text=Coupon+Site" alt="Coupon Site Landing Page">
+                        </div>
+                        <div class="project-info">
+                            <h3>Coupon Site Landing Page</h3>
+                            <p>A responsive landing page for a coupon website, focusing on clean design and user engagement.</p>
+                            <a href="https://rad-genie-64775c.netlify.app" target="_blank" class="project-link">
+                                View Project <i class="ri-arrow-right-line"></i>
+                            </a>
                         </div>
                     </div>
-                    <div id="image">
-                        <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                    </div>
-                </div>
-                <div class="projects p2">
-                    <div id="text3">
-                        <a href="https://meek-kringle-be4d30.netlify.app"><h1>Calculator</h1></a>
-                        <div class="circle"><i class="ri-arrow-right-up-line"></i></div>
-                    </div>
-                    <div id="image">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                    </div>
-                </div>
-                <div class="projects p3">
-                    <div id="text3">
-                        <h1>Course Landing PAGE<br> Design </h1>
-                        <div class="circle"><i class="ri-arrow-right-up-line"></i>
-
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://placehold.co/600x400/6c5ce7/FFFFFF?text=Calculator+App" alt="Interactive Calculator">
                         </div>
-
+                        <div class="project-info">
+                            <h3>Interactive Calculator</h3>
+                            <p>A fully functional calculator application with a modern UI, built using JavaScript.</p>
+                            <a href="https://meek-kringle-be4d30.netlify.app" target="_blank" class="project-link">
+                                View Project <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div id="image">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="">
-
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://placehold.co/600x400/007bff/FFFFFF?text=Course+Page" alt="Course Landing Page Design">
+                        </div>
+                        <div class="project-info">
+                            <h3>Course Landing Page Design</h3>
+                            <p>A sleek and engaging landing page design for an online course, demonstrating UI/UX principles.</p>
+                            <a href="#" class="project-link">
+                                View Project <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://placehold.co/600x400/6c5ce7/FFFFFF?text=Old+Portfolio" alt="Portfolio V1 (Old)">
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio V1 (Old)</h3>
+                            <p>The previous iteration of my portfolio, showcasing earlier design and development skills.</p>
+                            <a href="#" class="project-link">
+                                View Project <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
             </div>
-        </div>
-        <div id="page3">
-            <div id="left1">
-                <div id="text5">
-                    <h2>Contact</h2>
-                    <h1>Contact <br>Details</h1>
-                </div>
-                <div id="info">
-                    <div class="infos">
-                        <div class="circle i1"><i class="ri-message-2-line"></i></div>
-                        <a href="Suman Roy" ><h1>sroy57893@gmail.com</h1></a>
-                    </div>
-                    <div class="infos">
-                        
-                        <a href="https://www.linkedin.com/in/suman-roy-98625b247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bx bxl-linkdin"></i><h1>linkedin</h1></a>
-                    </div>
-                    <div class="infos">
-                        
-                        <a href="https://github.com/sroy101"><i class="bx bxl-github"></i><h1>github</h1></a>
-                    </div>
-                    
-                </div>
-            </div>
-            <div id="right1">
-                <div class="line l1">
-                    
-                    <h1>👋 Say Hi!</h1>
-                    <div class="circle c1"><i class="ri-arrow-right-up-line"></i></div>
-                </div>
-                 <div class="line l2"></div>
-            </div>
-        </div>
+        </section>
 
-        <footer>
-            <p>All Right Reserved <a href=""></a></p>
-        </footer> 
-    </div>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container text-center">
+                <h2 class="heading-primary">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="text-lg">
+                        I'm always open to new opportunities, collaborations, and conversations! Whether you have a question, a project idea, or just want to say hi, feel free to reach out.
+                    </p>
+                    <div class="contact-info-list">
+                        <a href="mailto:sroy934166@gmail.com" class="contact-info-item">
+                            <i class="ri-mail-line"></i>
+                            <span>sroy934166@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/suman-kumar-roy-98625b247/" target="_blank" class="contact-info-item">
+                            <i class="ri-linkedin-fill"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/RoyXkhushi" target="_blank" class="contact-info-item">
+                            <i class="ri-github-fill"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send Me a Message</h3>
+                        <form action="#" method="POST"> <!-- Placeholder action -->
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="button button-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content container">
+                <p>&copy; <span id="currentYear"></span> Suman Kumar Roy. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/RoyXkhushi" target="_blank" class="social-link" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/suman-kumar-roy-98625b247/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    <!-- Add more social media links as needed -->
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn" aria-label="Scroll to Top"><i class="ri-arrow-up-line"></i></button>
+
+    </div> <!-- End Main Wrapper -->
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            const html = document.documentElement;
+            const darkModeToggle = document.querySelector('.dark-mode-toggle');
+            const navToggle = document.querySelector('.nav-toggle');
+            const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+            const mobileCloseBtn = document.querySelector('.mobile-menu-overlay .close-btn');
+            const mobileNavLinks = document.querySelectorAll('.mobile-menu-overlay .nav-link');
+            const desktopNavLinks = document.querySelectorAll('.nav-links .nav-link');
+            const sections = document.querySelectorAll('section');
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+            // --- Dark Mode Toggle ---
+            // Set initial mode based on localStorage or default
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                html.classList.remove('dark');
+                darkModeToggle.innerHTML = '<i class="ri-sun-fill"></i>';
+            } else {
+                html.classList.add('dark');
+                darkModeToggle.innerHTML = '<i class="ri-moon-fill"></i>';
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                html.classList.toggle('dark');
+                if (html.classList.contains('dark')) {
+                    localStorage.setItem('theme', 'dark');
+                    darkModeToggle.innerHTML = '<i class="ri-moon-fill"></i>';
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    darkModeToggle.innerHTML = '<i class="ri-sun-fill"></i>';
+                }
+                // Dynamically update CSS variables for backgrounds if needed (already handled by :root variables)
+                // This will re-evaluate CSS custom properties based on the 'dark' class
+            });
+
+            // --- Mobile Navigation ---
+            navToggle.addEventListener('click', () => {
+                mobileMenuOverlay.classList.add('open');
+            });
+
+            mobileCloseBtn.addEventListener('click', () => {
+                mobileMenuOverlay.classList.remove('open');
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuOverlay.classList.remove('open');
+                    // Smooth scroll is handled by CSS scroll-behavior
+                });
+            });
+
+            // --- Active Nav Link on Scroll & Scroll Reveal Animations ---
+            const options = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.3 // Trigger when 30% of the section is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    const id = entry.target.id;
+                    const desktopNavLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+                    const mobileNavLink = document.querySelector(`.mobile-menu-overlay a[href="#${id}"]`);
+
+                    if (entry.isIntersecting) {
+                        // Activate nav link
+                        desktopNavLinks.forEach(link => link.classList.remove('active'));
+                        mobileNavLinks.forEach(link => link.classList.remove('active'));
+                        if (desktopNavLink) desktopNavLink.classList.add('active');
+                        if (mobileNavLink) mobileNavLink.classList.add('active');
+
+                        // Trigger scroll animations
+                        if (entry.target.classList.contains('about-section') && !entry.target.classList.contains('animate-in')) {
+                            entry.target.querySelector('.about-content').classList.add('animate-in');
+                        }
+                        if (entry.target.classList.contains('skills-section')) {
+                            entry.target.querySelectorAll('.skill-card').forEach((card, index) => {
+                                if (!card.classList.contains('animate-in')) {
+                                    setTimeout(() => card.classList.add('animate-in'), index * 100); // Staggered animation
+                                }
+                            });
+                        }
+                        if (entry.target.classList.contains('projects-section')) {
+                            entry.target.querySelectorAll('.project-card').forEach((card, index) => {
+                                if (!card.classList.contains('animate-in')) {
+                                    setTimeout(() => card.classList.add('animate-in'), index * 150); // Staggered animation
+                                }
+                            });
+                        }
+                         if (entry.target.classList.contains('contact-section') && !entry.target.classList.contains('animate-in')) {
+                            entry.target.querySelector('.contact-content').classList.add('animate-in');
+                        }
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // --- Scroll to Top Button ---
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) { // Show button after scrolling 300px
+                    scrollToTopBtn.style.display = 'block';
+                } else {
+                    scrollToTopBtn.style.display = 'none';
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // --- Dynamic Year in Footer ---
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // --- Mouse Parallax for Hero Background (Subtle 3D Effect) ---
+            const heroSection = document.getElementById('hero');
+            if (heroSection) {
+                heroSection.addEventListener('mousemove', (e) => {
+                    const shapes = heroSection.querySelectorAll('.hero-background-shapes .shape');
+                    const x = (e.clientX / window.innerWidth - 0.5) * 2; // -1 to 1
+                    const y = (e.clientY / window.innerHeight - 0.5) * 2; // -1 to 1
+
+                    shapes.forEach((shape, index) => {
+                        const depth = (index % 2 === 0) ? 20 : 10; // Different depths for shapes
+                        const moveX = -x * depth;
+                        const moveY = -y * depth;
+                        shape.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${parseFloat(shape.style.transform.split('rotate(')[1] || '0')}deg)`;
+                    });
+                });
+            }
+        });
+    </script>
 </body>
+</html>
